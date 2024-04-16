@@ -493,3 +493,8 @@ label.margin-toggle:not(.sidenote-number) {
     }
 }
 
+canvas {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+  }
