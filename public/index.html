@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="styles/style.css"
+    rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Math&display=swap" rel="stylesheet">
+    <title>Hannah Maeve Andersen's Home Page</title>
+  </head>
+  <body>
+  <article>
+    <section>
+      <h1> Welcome to My Homepage!</h1>
+      <p class="subtitle">Hannah Maeve Andersen</p>
+      <figure>
+        
+        <label for="jarjar" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="jarjar" class="margin-toggle"/>
+        <span class="marginnote">
+          Me and my cat Jar Jar.
+        </span>
+        <img src="images/me-and-jar-jar.jpg">
+      </figure>
+      <p>
+        <span class="newthought">This site is always a work in progress.</span>
+        It serves as a space for me to keep track of the cool stuff I've found.
+        I've come across a lot of cool things at this point in my life.
+        It's honestly getting overwhelming.
+        I live in the information age though.
+        And I've kind of hoarded a lot of information.
+        So here you go.
+        Enjoy!
+      </p>
+    </section>
+    <section>
+      <h2>My Interests..</h2>
+      <ul>
+        <li>Computers</li>
+        <li>Math</li>
+        <li>Science</li>
+        <li>Activism</li>
+        <li>Mental Health and Wellbeing</li>
+        <li>Videogames</li>
+        <li>Drawing</li>
+        <li>Music</li>
+        <li>Photography</li>
+      </ul>
+    </section>
+    <section>
+      <h2> WebGL Garbage</h2>
+
+      <p>
+        <style>
+          canvas {
+            width: 30vw;
+            height: 30vh;
+            display: block;
+          } 
+        </style>
+        <label for="mn-webgl" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="mn-webgl" class="margin-toggle"/>
+        <span class="marginnote">
+          <canvas id="canvas"></canvas>
+          <!--
+          This sample uses TWGL (Tiny WebGL) to hide the clutter.
+          Otherwise the sample would be full of code not related to the point of the sample.
+          For more info see https://webgl2fundamentals.org/webgl/lessons/webgl-less-code-more-fun.html
+          -->
+          <script src="https://webgl2fundamentals.org/webgl/resources/twgl-full.min.js"></script>
+          <script src="https://webgl2fundamentals.org/webgl/resources/m4.js"></script>
+          <script src="https://webgl2fundamentals.org/webgl/resources/flattened-primitives.js"></script>
+          A demo of webgl.
+        </span>
+        <span class="newthought">WebGL takes the web to the next level.</span>
+        One can now use their graphics card through the web browser.
+        This allows web applications to leverage decent computational power.
+        I'm personally excited by the fact that I can include some javascript on my static webpage
+        that could for example, simulate Maxwells Equations (the equations that describe how light behaves under
+        the wave model of light). 
+        This means that for example, I could write my simulation in javascript and then present and share
+        my simulation realtime during a meeting.
+      </p>
+      <p>I'm going to be practicing WebGL, which means I need to actually <em>do</em> WebGL.
+      Thus I've made a separate webpage <a href="webgl-garbage.html">WebGL Garbage</a>, which has my
+      exercies thus far.
+      </p>
+    </section>
+
+    <section>
+      <h2> Interesting Links</h2>
+      <p>Other sites that I found interesting...</p>
+      <ul>
+        <li><a href="http://www.ysbl.york.ac.uk/~cowtan/fourier/duck1.html">The Fourier Duck</a></li>
+        <li><a href="https://cemsim.com/">Maxwell Realtime Simulation</a></li>
+        <li><a href="https://pyodide.org/en/stable/console.html">Pyodide REPL</a></li>
+        <li><a href="https://github.com/enso-org/enso">Enso</a>, a visual programming tool</li>
+        <li><a href="https://aframe.io/"> AFrame</a>: WebGL using only html</li>
+        <li><a href="https://webglfundamentals.org/">WebGL Fundimentals</a>: has super cool pipeline visual</li>
+      </ul>  
+    </section>
+
+    <section>
+      <h2>Notable Plots</h2>
+      <img src="images/total.gif" alt="GIF of gold nanosphere hit with EM wave." />
+    </section>
+    <section>
+      <h2>About the Style</h2>
+      <p>This website uses personalized <a href="https://edwardtufte.github.io/tufte-css/">tuft-css</a>.</p>
+    </section>
+  <script src="scripts/main.js"></script>
+  </article>
+  </body>
+</html>
+
