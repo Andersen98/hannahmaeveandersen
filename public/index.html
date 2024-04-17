@@ -6,11 +6,11 @@
     <link href="styles/style.css"
     rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Math&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Math&display=swap" rel="stylesheet">
     <title>Hannah Maeve Andersen's Home Page</title>
   </head>
   <body>
@@ -54,19 +54,11 @@
     </section>
     <section>
       <h2> WebGL Garbage</h2>
-
       <p>
-        <style>
-          canvas {
-            width: 30vw;
-            height: 30vh;
-            display: block;
-          } 
-        </style>
         <label for="mn-webgl" class="margin-toggle">&#8853;</label>
         <input type="checkbox" id="mn-webgl" class="margin-toggle"/>
         <span class="marginnote">
-          <canvas id="canvas"></canvas>
+          <canvas class="canvas-wrapper" id="canvas"></canvas>
           <!--
           This sample uses TWGL (Tiny WebGL) to hide the clutter.
           Otherwise the sample would be full of code not related to the point of the sample.
@@ -75,7 +67,7 @@
           <script src="https://webgl2fundamentals.org/webgl/resources/twgl-full.min.js"></script>
           <script src="https://webgl2fundamentals.org/webgl/resources/m4.js"></script>
           <script src="https://webgl2fundamentals.org/webgl/resources/flattened-primitives.js"></script>
-          A demo of webgl.
+          A demo of webgl. Copied from <a href="https://webgl2fundamentals.org/webgl/lessons/webgl-scene-graph.html">webgl2fundamentals</a>.
         </span>
         <span class="newthought">WebGL takes the web to the next level.</span>
         One can now use their graphics card through the web browser.
@@ -91,7 +83,42 @@
       exercies thus far.
       </p>
     </section>
-
+    <section>
+      <h2>Quaternions</h2>
+      <p>
+        <span class="newthought">IDK I just had to talk about quaternions.</span>
+        Quaternions are stupid cool. They "cover" the sphere twice.
+        Quaternions are the supreme way to encode rotation, as they defeat the gimble lock problem.
+        Finally, quaternions are a natural extension of the imaginary number.
+        A subset of quaternions, the one's with unit magnitude, actually have a mapping to SU(2).
+        This means that quaternions not only encode rotations, but they also encode spin 1/2 particle shit 
+        on the Blochsphere. 
+        Quaternions are a mathematical tool equivalent of a double barrel shotgun and flame thrower combo,
+        wielded by a hot bisexual. That is to say, Quaternions are fucking cool.
+        They are getting their own page. I'm obsessed with them. 
+        <a href="quaternions.html">Here is my page on quaternions.</a>
+      </p>
+    </section>
+    <section>
+      <h2>Visual Programming</h2>
+      <p>
+        <span class="newthought">Okay listen, I'm not some n00b, I just get tired of text.</span>
+        I desparately wanna play with visual programming more. 
+        I'm finding code to be too repetative for my liking.
+        Visual programming is, for the most part, absolutely trash.
+        That being said, I'm stupid. I wanna try it out. I wanna get my hands soiled.
+        <a href="visual-programming.html">So here is my visual programming page.</a>
+        <label for="sn-visual"
+        class="margin-toggle sidenote-number">
+        </label>
+        <input type="checkbox"
+              id="sn-visual"
+              class="margin-toggle"/>
+        <span class="sidenote">
+          I'm a fucking idiot for doing this. 
+        </span>
+      </p>
+    </section>
     <section>
       <h2> Interesting Links</h2>
       <p>Other sites that I found interesting...</p>
@@ -99,7 +126,7 @@
         <li><a href="http://www.ysbl.york.ac.uk/~cowtan/fourier/duck1.html">The Fourier Duck</a></li>
         <li><a href="https://cemsim.com/">Maxwell Realtime Simulation</a></li>
         <li><a href="https://pyodide.org/en/stable/console.html">Pyodide REPL</a></li>
-        <li><a href="https://github.com/enso-org/enso">Enso</a>, a visual programming tool</li>
+        <li><a href="https://www.flyde.dev/">flyde</a>, a visual programming tool</li>
         <li><a href="https://aframe.io/"> AFrame</a>: WebGL using only html</li>
         <li><a href="https://webglfundamentals.org/">WebGL Fundimentals</a>: has super cool pipeline visual</li>
       </ul>  
