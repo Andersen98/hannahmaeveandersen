@@ -28,17 +28,15 @@
         devShell = pkgs.mkShell {
           # add things you want in your shell here
           buildInputs = with pkgs; [
-            nodejs
+            #nodejs
             # You can set the major version of Node.js to a specific one instead
             # of the default version
-            # pkgs.nodejs-19_x
+            pkgs.nodejs_18
 
             # You can choose pnpm, yarn, or none (npm).
             pkgs.nodePackages.pnpm
             # pkgs.yarn
 
-            pkgs.nodePackages.typescript
-            pkgs.nodePackages.typescript-language-server
           ];
         };
       }

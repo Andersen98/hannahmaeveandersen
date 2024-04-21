@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="styles/style.css"
+    rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Math&display=swap" rel="stylesheet">
+    <title>Learning CSS</title>
+  </head>
+  <body>
+  <article>
+    <section>
+      <h1> Learning CSS</h1>
+      <p class="subtitle">Fuck this is tedious...</p>
+    </section>
+    <section>
+      <h2>
+        Adding Content
+      </h2>
+      <p>You can add content using CSS! It is cool.</p>
+      <p class="arrow_box">
+        So arrow boxes are cool.
+        Check out <a href="https://cssarrowplease.com/">the arrow box generator.</a>
+      </p>
+      <style>
+        .arrow_box {
+          position: relative;
+          background: #88b7d5;
+          border: 4px solid #c2e1f5;
+        }
+        .arrow_box:after, .arrow_box:before {
+          left: 100%;
+          top: 50%;
+          border: solid transparent;
+          content: "";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+        }
+
+        .arrow_box:after {
+          border-color: rgba(136, 183, 213, 0);
+          border-left-color: #88b7d5;
+          border-width: 40px;
+          margin-top: -40px;
+        }
+        .arrow_box:before {
+          border-color: rgba(194, 225, 245, 0);
+          border-left-color: #c2e1f5;
+          border-width: 46px;
+          margin-top: -46px;
+        }
+      </style>
+    </section>
+  </article>
+  </body>
+</html>
+  
