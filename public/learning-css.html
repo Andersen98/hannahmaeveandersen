@@ -118,6 +118,156 @@
        </span>
       </p>
     </section>
+    <section>
+      <div class="funk-container">
+        <h2 class="funk-box">
+          The Box Model
+        </h2>
+      </div>
+      <p>
+        So I learned that there are two versions of boxes.
+        The <code>content-box</code> and <code>border-box</code>. 
+        The <code>border-box</code> is the superior choice.
+        Set the default by doing the following:
+        <label for="sn-box-sizing"
+        class="margin-toggle sidenote-number">
+        </label>
+        <input type="checkbox"
+          id="sn-box-sizing"
+          class="margin-toggle"/>
+        <span class="sidenote">
+        <a href="https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/">
+          Taken from the CSS Tips article
+        </a>
+        <pre>
+          <code>
+            html {
+              box-sizing: border-box;
+            }
+            
+            *,
+            *::before,
+            *::after {
+              box-sizing: inherit;
+            }          
+          </code>
+        </pre>
+      </p>
+      <p>
+        <strong>Inline blocks</strong> are cool for if you wanna
+        put a link in a box so that it is easy to click on.
+        <label for="sn-box-inline"
+        class="margin-toggle sidenote-number">
+        </label>
+        <input type="checkbox"
+          id="sn-box-inline"
+          class="margin-toggle"/>
+        <span class="sidenote">
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#using_display_inline-block">
+          <cite>MDN Docs</cite>
+        </a>
+      </p>
+      <p>
+        Here is a  <a class="cool-link" href="https://hannahmaeveandersen.com/">a cool website</a>.
+      </p>
+    </section>
+    <section>
+      <div >
+        <h2 class="spiral-box" >Styling Backgrounds</h2>
+      </div>
+      <p>When styling a background, you have a lot of parameters to work with. </p>
+      <h2 class="gradient-background">Gradient backgrounds are cool</h2>
+      <p>
+        I think I found my new background! I used <a href="https://cssgradient.io/">CSSGradient.io</a> to generate it.
+        <pre class="gradient-background">
+          <code>
+            .gradient-background {
+              background: rgb(63,94,251);
+              background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+            }
+          </code>
+        </pre>
+      </p>
+    </section>
+    <section>
+      <h2>Text Direction</h2>
+      <div class="vertical-box">
+        <p>I learned that you can make the text direction be vertical.</p>
+      </div>
+    </section>
+    <section>
+      <h2>Relative units</h2>
+      <p>
+        Relative units are cool because they scale.
+      </p>
+      <h3>Line Height</h3>
+      <p>
+        An example of a relative unit is the line height <code>lh</code>. 
+        For example, I can make a background using a linear gradient that looks like lined paper.
+      </p>
+      <p class="lined-paper" style="line-height: 2em;">
+        So I went to the store this morning.
+        I was able to participate in society.
+        It seemed that people there percieved me as a woman.
+        How lucky I am that I was able to have pleasant conversations.
+        This is not the case for all transgender people though.
+        This is also not the case all the time for me.
+      </p>
+      <p class="lined-paper" style="line-height: 4em;">
+        Being transgender can mean denying you those pleasant little things.
+        This can destroy a person.
+        Or at the very least, can cause immense damage.
+      </p>
+      <pre>
+        <code>
+          &lt;p class="lined-paper" style="line-height: 2em;"&gt;
+            So I went to the store this morning.
+            I was able to participate in society.
+            It seemed that people there percieved me as a woman.
+            How lucky I am that I was able to have pleasant conversations.
+            This is not the case for all transgender people though.
+            This is also not the case all the time for me.
+            Being transgender can mean denying you those pleasant little things.
+            This can destroy a person.
+            Or at the very least, can cause immense damage.
+          &lt;/p&gt;
+          &lt;p class="lined-paper" style="line-height: 4em;"&gt;
+            Being transgender can mean denying you those pleasant little things.
+            This can destroy a person.
+            Or at the very least, can cause immense damage.
+          &lt;/p&gt;
+          p.lined-paper {
+            background-color: beige;
+            margin: 0;
+            background-image: repeating-linear-gradient(
+              to top,
+              lightskyblue 0 2px,
+              transparent 2px 1lh
+            );
+          }
+        </code>
+      </pre>
+      <p>
+        <code>lh</code> is relative to the height of the element.
+        <code>rlh</code> is relative to the <strong>root</strong> element line height.
+        As shown above, it lets you align box decoration to the text.
+        It will always place the lines at the right place, regardless of the line height.
+      </p>
+      <h3>Percentages</h3>
+      <p>
+        A percentage is some percent of the parent element. 
+      </p>
+      <div style="border: 5px dashed greenyellow;display: block;">
+        <p>parent</p>
+        <div class="width-wrapper">
+          <p> I am in a 40% width box</p>
+          <div class="width-wrapper" style="border-color: red;">
+            <p>I am in a 40% width box that is inside a 40% width box.</p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
   </article>
   </body>
   <style>

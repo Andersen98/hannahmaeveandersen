@@ -1,6 +1,17 @@
-@layer tufte, theme;
+@layer tufte, theme, exercises;
 @import url(tufte.css) layer(tufte);
 
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  
 @layer theme {
     html {
         background-color: crimson;
@@ -19,4 +30,73 @@
 
         border: dotted red;
     }
+}
+
+@layer exercises{
+    .funk-container {
+        border-top: 10px inset green;
+        border-right: 10px inset black;
+        border-bottom: 20px double rgb(23 45 145);
+        box-sizing: border-box;
+        padding: 30px
+      }
+      
+      .funk-box {
+        border: 2px inset #333333;
+        border-left-style: none;
+        border-top-style: inset;
+        border-right-width: 10px;
+        border-bottom-color: hotpink;
+        border-bottom-style: dotted;
+      }
+
+      a.cool-link {
+        background-color: rgb(179 57 81);
+        padding: 1em 2em;
+        border: solid black 5px;
+        display: inline-block;
+      }
+      
+      a.cool-link:hover {
+        background-color: rgb(66 28 40);
+      }
+
+      .spiral-box {
+        background-image: url(../images/spiral.png);
+        color: #fff;
+        text-shadow:
+          3px 3px 0 #000,
+          -3px 3px 0 #000,
+          -3px -3px 0 #000,
+          3px -3px 0 #000;
+        background-repeat: round;
+        display: inline-block;
+        height: 5em;
+        background-size: contain;
+        
+      }
+      .gradient-background {
+        background: rgb(63,94,251);
+        background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+        
+      }
+
+      .vertical-box {
+        writing-mode: vertical-lr;
+        block-size: auto;
+      }
+      p.lined-paper {
+        background-color: beige;
+        margin: 0;
+        background-image: repeating-linear-gradient(
+          to top,
+          lightskyblue 0 2px,
+          transparent 2px 1lh
+        );
+      }
+
+      .width-wrapper {
+        inline-size: 40%;
+        border: 5px solid rebeccapurple;
+      }
 }
