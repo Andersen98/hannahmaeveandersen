@@ -99,4 +99,27 @@ html {
         inline-size: 40%;
         border: 5px solid rebeccapurple;
       }
+      .wrapper {
+        border: 5px solid rebeccapurple;
+      }
+      input[type="text"],
+      input[type="email"] {
+        border: 2px solid #000;
+        margin: 0 0 1em 0;
+        padding: 10px;
+        width: 100%;
+      }
+
+      input[type="submit"] {
+        border: 3px solid #333;
+        background-color: #999;
+        border-radius: 5px;
+        padding: 10px 2em;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      input[type="submit"]:hover, input[type="submit"]:focus {
+        background-color: #333;
+      }
 }
