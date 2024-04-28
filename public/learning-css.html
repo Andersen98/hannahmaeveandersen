@@ -266,7 +266,126 @@
           </div>
         </div>
       </div>
+    </section>
+    <section>
+      <h2>Sizing Elements</h2>
+      <p>
+        Elements have an intrinsic size. A <code>div</code> element has no size, so it collapses unless you put content in it
+        Meanwhile, images have a size defined by the image file.
+        Below is a div, div with text, and and image with a border.
+      </p>
+      <div style="border: 5px solid rebeccapurple;"></div>
+      <br />
+      <div style="border: 5px solid rebeccapurple;">gay thoughts</div>
+      <br />
+      <img src="images/spiral.png" style="border: 5px solid rebeccapurple;">
+      <h3>Percentages</h3>
+      <p>
+        My favorite percentage fact is that when setting margins and padding with percentages, the <strong>inline size</strong> is used to calculate top bottom left right.
+        You might expect that the top and bottom margin/padding would be calculated from the <strong>block size</strong> but that is not the case.
+        This kinda makes sense since the block size of a parent could be huge and could expand to fit content. 
+        Check out the below. <strong>Notice how the vertical and horizontal padding/margins are the same and are just 10% of the inline size/width of the parent.</strong>
+      </p>
+      <div style="border: 5px dashed greenyellow;display: block;">
+        <p>parent</p>
+        <div style="margin: 10%;padding: 10%;border:5px solid rebeccapurple">
+          <p> I am in a 10% padding and margin</p>
+        </div>
+      </div>
+      <h3>Min sizes</h3>
+      <p>A min and max size sets the min and max size of an element</p>
+      <p>I personally think the min-size is really neat because it sets the min size of an element and then the element grows if it needs more space.
+        This can protect from overflow!
+        Below i have two boxes with the sane min size. one is empty and the other has a bunch of content in it.
+      </p>
+      <div style="min-block-size: 100px;" class="wrapper">
+        min width of 100px
+      </div>
+      <div style="min-block-size: 100px;" class="wrapper">
+      <p>
+        I had a nightmare last night.
+        It was about someone telling me that I had the face of a man.
+        I'm not sure why I had this nightmare.
+        I know that regardless of how I look, I am a valid woman at heart.
+        I think the painful part of the dream was that I was having a breakdown.
+        I was going to be put on trial.
+        I was seen as a man pretending to be a woman.
+        I think this is something that really scares me.
+        I want to be seen as a woman in society.
+        I think transphobia is still present inside of me.
+        My biases can be combatted though.
+        Transgender bodies are beautiful.
+        There is no such thing as "the face of a man". 
+        There are only bodies who have gender identities.
+        Telling someone that they are a man due to how they look is bioessentialism.
+        Bioessentialism is transphobic and flatly harmful.
+        So many people are bioessentialist it feels like.
+        But I have to keep in mind that these people who don't see me as valid are wrong.
+      </p>
+      <p>
+        Sometimes I pass.
+        I actually pass a lot of the time now-adays.
+        This kinda scares me though.
+        I wonder what will happen if I don't pass when it is really important.
+        Passing is a privaledge that can be revoked from me by whoever, whenever.
+        I hate living in fear. 
+        My goals as of late are to be happy more of the time.
+        So fuck passing.
+        I truly believe that the only people that I should care about are the people that see me as a woman regardless of how well I pass.
+        Still, I have had pleasant experiences through passing.
+        Such as good conversations at the grocery store.
+        But these good conversations lead me to trust the public to not be transphobic.
+        This is not a good strategy.
+        Because I want to see myself as valid no matter what.
+        I don't want my validity to hinge on others.
+        Dysphoria is hard. 
+      </p>
+      <p>
+        Maybe I'll talk about this in therapy.
+        I cannot afford surgery right now.
+        So I think the best route of action is to change how I respond to stimuli.
+        Additionally, I want a way of viewing myself to not hurt my transgender peers.
+        Fuck transphobia. I wanna destroy any of that that exists in myself.
+      </p>
+      </div>
+      <p>
+        Max width is really cool for images. If you set the max width to 100% for example
+        the image will at most be 100% of the parent element size. But the image will not
+        be stretched out if it is  smaller than the parent.
+      </p>
+      <h3> Max Sizes</h3>
+      <p>
+      I have 3 images below. The first two have max width 100%. notice how the first one is shrunk to fill the parent.
+      The second one is not stretched out though and only goes to 100%.
+      The third has inline size of 100% and stretches to fill the parent. 
+      Using max sizes helps with responsive design since if you view this on a smaller device, things can scale down appropriately.
+      </p>
+      <div class="wrapper" style="inline-size: 50px;">
+        <img src="images/smile.png" style="max-width: 100%;">
+      </div >
+      <div class="wrapper" style="inline-size: 500px;">
+        <img src="images/smile.png" style="max-width: 100%;">
+      </div >
+      <div class="wrapper" style="inline-size: 500px;">
+        <img src="images/smile.png" style="inline-size: 100%;">
+      </div >
+      <h3>Viewport Sizing</h3>
+      <p>Viewport width and height are used to make things like a heading that always fills the viewport to a certain ratio. </p>
+      <div class="wrapper" style="overflow:visible; padding:10%; background-color: bisque; max-block-size: 100vh; font-size:10vh;">
+        FUCK TRANSPHOBIA. I HATE TRANSPHOBIC IDEAS.
+      </div>
+    </section>
+    <section>
+      <h2>Web Form Styles</h2>
+      <p>You can style webforms with css.</p>
+      <form>
+        <div><label for="name">Name</label>
+        <input type="text" id="name"></div>
+        <div><label for="email">Email</label>
+        <input type="email" id="email"></div>
       
+        <div class="buttons"><input type="submit" value="Submit"></div>
+      </form>
     </section>
   </article>
   </body>
